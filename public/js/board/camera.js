@@ -21,7 +21,7 @@ function zoom_camera(event) {
     if (zoom >= 7) return;
     zoomElement.style.transform = `scale(${(zoom += isTouchPad ? 0.1 : 0.5)})`;
   } else {
-    if (zoom <= 1.2) return;
+    if (zoom <= 0.5) return;
     zoomElement.style.transform = `scale(${(zoom -= isTouchPad ? 0.1 : 0.5)})`;
   }
 }
