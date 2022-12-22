@@ -147,12 +147,12 @@ function renderPixelOwner(pixel) {
       response.json().then((json) => {
         cachedUsers[pixelOwner] = json;
         ownerElement.innerHTML = `<img src="${cachedUsers[pixelOwner].picture}" alt="${cachedUsers[pixelOwner].name}">
-  <h3 class="name">${cachedUsers[pixelOwner].name}</h3>`;
+  <h5 class="name">${cachedUsers[pixelOwner].name}</h5>`;
       });
     });
   } else {
     ownerElement.innerHTML = `<img src="${cachedUsers[pixelOwner].picture}" alt="${cachedUsers[pixelOwner].name}">
-  <h3 class="name">${cachedUsers[pixelOwner].name}</h3>`;
+  <h5 class="name">${cachedUsers[pixelOwner].name}</h5>`;
   }
 }
 
