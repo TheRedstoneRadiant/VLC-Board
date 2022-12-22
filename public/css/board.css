@@ -46,6 +46,8 @@ body {
 
 .links {
   width: 150px;
+  display: flex;
+  justify-content: center;
 }
 
 .links>a {
