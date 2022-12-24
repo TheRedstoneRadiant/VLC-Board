@@ -1,7 +1,6 @@
 # VLC r/Place
-
-A l
-An r/place recreation for VLC.
+Recreated [r/Place](https://en.wikipedia.org/wiki/R/place) canvas allowing real-time pixel placements at a one-minute interval.
+Hosted in collaboration with the school student council for Spirit Week featuring 80 students all creating art simultaneously.
 
 ## Features
 - Scrollable and pannable camera
