@@ -1,6 +1,6 @@
 # VLC r/Place
 Reddit's [r/Place](https://en.wikipedia.org/wiki/R/place) inspired canvas allowing real-time pixel placements at a one-minute interval.
-Hosted in collaboration with the school student council for Spirit Week featuring 80 students all creating art simultaneously.
+Hosted in collaboration with the school student council for Spirit Week featuring 120 students all creating art simultaneously.
 
 ## Features
 - Scrollable and pannable camera
