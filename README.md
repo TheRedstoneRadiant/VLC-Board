@@ -80,7 +80,7 @@ npm run dev
 ```
 
 # VLC Board 2022 (50x50 -> 100x50 -> 100x100 -> 128x128)
-![image](https://user-images.githubusercontent.com/76220359/209422431-a9509969-489a-4878-acb4-27d6f93c13ed.png)
+<img src="https://user-images.githubusercontent.com/76220359/209422431-a9509969-489a-4878-acb4-27d6f93c13ed.png" width="400">
 
 # VLC Board 2021 (100x100)
-![image](https://user-images.githubusercontent.com/76220359/209422435-a02d65e2-6f58-4df5-a501-688cc48c25df.png)
+<img src="https://user-images.githubusercontent.com/76220359/209422435-a02d65e2-6f58-4df5-a501-688cc48c25df.png" width="400">
