@@ -69,9 +69,12 @@ nano .env
   
 </details>
 
+Run database schema
+```bash
+npm run schema
+```
+
 Start server
 ```bash
 npm run dev
-OR
-npm run start
 ```
