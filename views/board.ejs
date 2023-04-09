@@ -47,16 +47,16 @@
         alt="VLC Board" />
       <h1>VLC Board</h1>
       <div class="links">
-        <a target="_blank" href="https://vlc-chat.web.app">Join the chat</a>
+        Canvas day is now officially over! 🎉
         <!-- <a href="/about" target="_blank">About</a>
         <a href="https://github.com/TheRedstoneRadiant/VLC-r-Place" target="_blank">Github</a> -->
       </div>
     </div>
     <div id="owner"></div>
     <div id="colors">
-      <div class="g_id_signin" data-type="standard" data-shape="rectangular" data-theme="filled_black"
+      <!-- <div class="g_id_signin" data-type="standard" data-shape="rectangular" data-theme="filled_black"
         data-text="signin_with" data-size="medium" data-logo_alignment="left">
-      </div>
+      </div> -->
     </div>
   </div>
 
@@ -67,9 +67,9 @@
     </div>
   </div>
 
-  <div class="center">
+  <!-- <div class="center">
     <p id="placePixel" onclick="placePixel(event)"><i class="fa-sharp fa-solid fa-check"></i></p>
-  </div>
+  </div> -->
   <div id="error-box">
     <div class="error-content">
       <div class="error-top">
@@ -79,6 +79,30 @@
       <button class="close" onclick="closeErrorBox()">Okay!</button>
     </div>
   </div>
+<!--   
+	
+	chat feature by @eesazahed
+	
+	<ul id="messages"></ul>
+
+
+    <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+    <script>
+      $(function(){
+        var socket = io();
+        // Form submission handler.
+        $('form').submit(function(){
+          // Send message to server.
+          socket.emit('chat message', $('#m').val());
+          $('#m').val('');
+          return false;
+        });
+        // Display messages emitted from server.
+        socket.on('chat message', function(msg){
+          $('#messages').append($('<li>').text(msg));
+        });
+      });
+    </script> -->
 </body>
 
 </html>
