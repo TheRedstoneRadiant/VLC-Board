@@ -84,5 +84,5 @@ npm run dev
 <h6>(50x50 -> 100x50 -> 100x100 -> 128x128)</h6>
 
 <h3>VLC Board 2021</h3>
-<img src="https://user-images.githubusercontent.com/76220359/209422435-a02d65e2-6f58-4df5-a501-688cc48c25df.png" width="1000">
+<img src="https://user-images.githubusercontent.com/76220359/209422435-a02d65e2-6f58-4df5-a501-688cc48c25df.png" width="500">
 <h6>(100x100)</h6>
