@@ -90,12 +90,16 @@ const verifyToken = async (idToken) => {
   return payload;
 };
 
-app.get("/", (req, res) => {
+const renderIndex = (req, res) => {
   if (!pixelArray) {
-      res.send("Oops! Failed to connect to MongoDB.");
+    // Retry render in 3s
+    return setTimeout(() => {renderIndex(req, res)}, 3000);
   }
+
   res.render("board", { googleClientId: process.env["GOOGLE_CLIENT_ID"], canvasHeight: pixelArray.length * 10, canvasWidth: pixelArray[0].length * 10 });
-});
+}
+
+app.get("/", renderIndex);
 
 app.post("/", async (req, res) => {
   let userPayload;
