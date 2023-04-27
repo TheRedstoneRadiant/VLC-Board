@@ -229,7 +229,7 @@ const sendPixelArray = (socket) => {
       socket.emit("canvasUpdate", { pixelArray: pixelArray });
     }
   } else {
-    setTimeout(sendPixelArray, 250);
+    setTimeout(() => {sendPixelArray(socket)}, 250);
   }
 };
 
