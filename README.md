@@ -1,8 +1,10 @@
 # VLC r/Place
+
 Reddit's [r/Place](https://en.wikipedia.org/wiki/R/place) inspired canvas allowing real-time pixel placements at a one-minute interval.
 Hosted in collaboration with the school student council for Spirit Week featuring 120 students all creating art simultaneously.
 
 ## Features
+
 - Scrollable and pannable camera
 - Pixel placement live in real time using Socket.io
 - Pixels and cooldown stored server side in MongoDB database
@@ -37,22 +39,26 @@ Orange colour selected:
 Placed orange pixel, on placement cooldown:
 <br>
 <img src="https://user-images.githubusercontent.com/76220359/209420964-3e09c524-1edb-46af-b9d4-a611ab0261bc.png" width="800">
+
 </details>
 
 ## Installation
 
 Clone the repo
+
 ```bash
 git clone https://github.com/TheRedstoneRadiant/VLC-Board
 cd VLC-Board
 ```
 
 Install dependencies
+
 ```bash
 npm install
 ```
 
 Copy .env.example to .env
+
 ```bash
 cp .env.example .env
 nano .env
@@ -70,11 +76,13 @@ nano .env
 </details>
 
 Run database schema
+
 ```bash
 npm run schema
 ```
 
 Start server
+
 ```bash
 npm run dev
 ```

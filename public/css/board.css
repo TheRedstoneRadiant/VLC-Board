@@ -21,43 +21,72 @@ body {
   justify-content: space-between;
   background-color: white;
   width: 200px;
-  height: 100%;
+  height: 100vh;
 }
 
-.sidebar>div {
+.sidebar > div {
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
 
 .info {
-  height: 200px;
+  /* height: 200px; */
   display: flex;
   flex-direction: column;
 }
 
-.info>h1 {
+#chat {
+  padding: none;
+  margin-top: 2rem;
+  border: 1px solid black;
+  text-align: right;
+  /* display: flex;
+	justify-content: space-between;
+	flex-direction: column; */
+}
+
+#messages {
+  list-style-type: none;
+  height: 400px;
+  overflow-y: auto;
+  padding: 0.4rem;
+  font: 0.75rem sans-serif;
+  margin: none;
+  border-bottom: 1px solid black;
+}
+
+#chat > input {
+  width: 100%;
+  border: none;
+  padding: 0.4rem;
+  font: 0.75rem sans-serif;
+}
+
+.info > h1 {
   margin: 0;
 }
 
-.info>img {
+.info > img {
   height: 120px;
 }
 
 .links {
+  margin-top: 20px;
   width: 150px;
   display: flex;
   justify-content: center;
+  flex-direction: column;
 }
 
-.links>a {
+.links > a {
   text-decoration: unset;
   display: inline-block;
   position: relative;
   color: black;
 }
 
-.links>a:after {
+.links > a:after {
   content: "";
   position: absolute;
   width: 100%;
@@ -70,7 +99,7 @@ body {
   transition: transform 0.25s ease-out;
 }
 
-.links>a:hover:after {
+.links > a:hover:after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
@@ -115,7 +144,7 @@ canvas {
   margin-bottom: 10px;
 }
 
-#colors>input[type="radio"] {
+#colors > input[type="radio"] {
   margin: 4px;
   appearance: none;
   width: 40px;
@@ -124,15 +153,16 @@ canvas {
   transition: all 0.2s;
 }
 
-#colors>input[type="radio"]:hover {
+#colors > input[type="radio"]:hover {
   cursor: pointer;
 }
 
-#colors>input[type="radio"]:checked {
+#colors > input[type="radio"]:checked {
   opacity: 0.7;
 }
 
 #pixel {
+  user-select: none;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
     rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   position: absolute;
@@ -151,6 +181,7 @@ canvas {
 }
 
 #placePixel {
+  user-select: none;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
     rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   position: absolute;
@@ -188,7 +219,7 @@ canvas {
   justify-content: space-evenly;
 }
 
-#owner>img {
+#owner > img {
   width: 30px;
   border: 2px solid black;
   border-radius: 25%;
@@ -218,7 +249,8 @@ canvas {
   margin: 15% auto;
   /* 15% from the top and centered */
   padding: 20px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   width: 400px;
   height: 200px;
   /* Could be more or less, depending on screen size */

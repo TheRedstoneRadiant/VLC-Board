@@ -21,7 +21,7 @@ function zoom_camera(event) {
     if (zoom >= 7) return;
     zoomElement.style.transform = `scale(${(zoom += isTouchPad ? 0.1 : 0.5)})`;
   } else {
-    if (zoom <= 0.5) return;
+    if (zoom <= 1) return;
     zoomElement.style.transform = `scale(${(zoom -= isTouchPad ? 0.1 : 0.5)})`;
   }
 }
@@ -159,7 +159,7 @@ function renderPixelOwner(pixel) {
 function pixelInfo(x, y) {
   if (!cachedPixels[`${x}${y}`]) {
     renderPixelOwner("open");
-    
+
     pixelQueryTimeout = setTimeout(() => {
       fetch("/pixel", {
         method: "POST",
@@ -181,7 +181,7 @@ function pixelInfo(x, y) {
           });
         }
       });
-    }, 1000);
+    }, 100);
   } else {
     renderPixelOwner(cachedPixels[`${x}${y}`]);
   }

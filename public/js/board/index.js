@@ -4,6 +4,8 @@ let pixelArray, interval;
 const coordElement = document.getElementById("pixel");
 const placeButton = document.getElementById("placePixel");
 const ownerElement = document.getElementById("owner");
+const chatInput = document.getElementById("chatInput");
+const messages = document.getElementById("messages");
 
 const colors = {
   1: "#6d001a",
@@ -190,6 +192,20 @@ socket.on("canvasUpdate", function (event) {
   pixelArray = event.pixelArray;
   renderPixels(event.pixelArray);
 });
+
+socket.on("chat", function (msg) {
+  const newMsg = document.createElement("p");
+  messages.appendChild(newMsg);
+  newMsg.innerHTML = msg;
+});
+
+function handle(e) {
+  if (e.keyCode === 13) {
+    socket.emit("chat", chatInput.value);
+    chatInput.value = "";
+    return false;
+  }
+}
 
 function placePixel(event) {
   fetch("/placepixel", {
