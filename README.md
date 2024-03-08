@@ -6,12 +6,12 @@ Hosted in collaboration with the school student council for Spirit Week featurin
 ## Features
 
 - Scrollable and pannable camera
-- Pixel placement live in real time using Socket.io
+- Pixel placement live in real time across clients using Socket.io
 - Pixels and cooldown stored server side in MongoDB database
-- Pixel owner displayed on hover
+- Pixel owner fetched and displayed on hover
 - Google sign in restricted to school domain
 - Google OAuth token verified on each request
-- `expand.js` expands canvas in real time
+- `expand.js` expands the canvas in real time
 
 <details open>
   <summary><h2>Screenshots</h2></summary>
